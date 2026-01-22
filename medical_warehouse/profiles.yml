@@ -1,0 +1,12 @@
+medical_warehouse:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: localhost # Or your database IP
+      user: postgres # e.g., postgres
+      password: root
+      port: 5432
+      dbname: medical_db # The name of the DB you created
+      schema: public # dbt will create 'staging' and 'marts' schemas
+      threads: 4 # How many models to run in parallel

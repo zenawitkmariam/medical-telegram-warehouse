@@ -1,0 +1,58 @@
+version: 2
+
+models:
+  # --- Dimension: Channels ---
+  - name: dim_channels
+    description: "Cleaned list of unique Telegram channels scraped."
+    columns:
+      - name: channel_key
+        description: "Primary Key: MD5 hash of the channel name."
+        tests:
+          - unique
+          - not_null
+
+      - name: channel_name
+        description: "The official name of the Telegram channel."
+        tests:
+          - not_null
+
+  # --- Dimension: Dates ---
+  - name: dim_dates
+    description: "Static date dimension for time-series analysis."
+    columns:
+      - name: date_key
+        description: "Primary Key in YYYYMMDD format."
+        tests:
+          - unique
+          - not_null
+
+  # --- Fact: Messages ---
+  - name: fct_messages
+    description: "Fact table containing every individual message and its engagement metrics."
+    columns:
+      - name: message_id
+        description: "Primary Key: The unique ID assigned by Telegram."
+        tests:
+          - unique
+          - not_null
+
+      - name: channel_key
+        description: "Foreign Key linking to dim_channels."
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_channels')
+              field: channel_key
+
+      - name: date_key
+        description: "Foreign Key linking to dim_dates."
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_dates')
+              field: date_key
+
+      - name: view_count
+        description: "Critical column: Number of views."
+        tests:
+          - not_null
