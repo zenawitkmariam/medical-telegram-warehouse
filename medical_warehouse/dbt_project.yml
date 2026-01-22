@@ -1,0 +1,33 @@
+# 1. Project Identification
+name: "medical_warehouse"
+version: "1.0.0"
+config-version: 2
+
+# 2. Connection Bridge
+# This MUST match the name of the profile you created in profiles.yml
+profile: "medical_warehouse"
+
+# 3. Directory Paths
+# Tells dbt where your different types of files are located
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+# 4. Model Configurations
+# This is where you tell dbt how to build your tables in PostgreSQL
+models:
+  medical_warehouse:
+    # Everything in models/staging/ will be created as a VIEW by default
+    staging:
+      +materialized: view
+
+    # Everything in models/marts/ will be created as a TABLE for faster querying
+    marts:
+      +materialized: table

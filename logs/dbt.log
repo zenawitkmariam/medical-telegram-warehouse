@@ -1,0 +1,38 @@
+[0m19:24:06.483085 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CF8C7F5C50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CF8C7FECD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CF8C586950>]}
+
+
+============================== 19:24:06.494374 | 3103d494-940e-45e5-8055-6b7a4c74a2cb ==============================
+[0m19:24:06.494374 [info ] [MainThread]: Running with dbt=1.11.2
+[0m19:24:06.496419 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\hp\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt init medical_warehouse', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m19:24:06.556017 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\hp\.dbt
+[0m19:24:06.559212 [info ] [MainThread]: A project called medical_warehouse already exists here.
+[0m19:24:06.561220 [debug] [MainThread]: Command `dbt init` succeeded at 19:24:06.560221 after 0.24 seconds
+[0m19:24:06.562220 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CF8C7FE8D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CF8D84B150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CF8D84B2D0>]}
+[0m19:24:06.563220 [debug] [MainThread]: Flushing usage events
+[0m19:24:07.643738 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:37:58.555882 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F3A10CF590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F3A0E368D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F3A20F3790>]}
+
+
+============================== 19:37:58.566881 | 2e61942d-c430-4b85-a2e7-d052cb061c4c ==============================
+[0m19:37:58.566881 [info ] [MainThread]: Running with dbt=1.11.2
+[0m19:37:58.567905 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\hp\\.dbt', 'invocation_command': 'dbt docs generate', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m19:37:58.568903 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path D:\10Academy\week_8\medical-telegram-warehouse-\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m19:37:58.571907 [debug] [MainThread]: Command `dbt docs generate` failed at 19:37:58.570904 after 0.21 seconds
+[0m19:37:58.573151 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F3A10AD050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F3A10AED10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F3A10ADC90>]}
+[0m19:37:58.574183 [debug] [MainThread]: Flushing usage events
+[0m19:37:59.677741 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:23:13.590005 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B5D8330850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B5D8036910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B5D832AFD0>]}
+
+
+============================== 09:23:13.601076 | 0c799fc9-8b62-4220-91d8-f875224c753b ==============================
+[0m09:23:13.601076 [info ] [MainThread]: Running with dbt=1.11.2
+[0m09:23:13.602261 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\hp\\.dbt', 'indirect_selection': 'eager', 'invocation_command': 'dbt init medical_warehouse', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m09:23:13.666772 [info ] [MainThread]: A project called medical_warehouse already exists here.
+[0m09:23:13.670341 [debug] [MainThread]: Command `dbt init` succeeded at 09:23:13.670341 after 0.21 seconds
+[0m09:23:13.670341 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B5D8036410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B5D82AE950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B5D832B150>]}
+[0m09:23:13.670341 [debug] [MainThread]: Flushing usage events
+[0m09:23:14.851278 [debug] [MainThread]: An error was encountered while trying to flush usage events

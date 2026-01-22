@@ -1,0 +1,11 @@
+2026-01-18 11:07:21,100 - INFO - Telegram client initialized
+2026-01-18 11:08:05,623 - INFO - Client authenticated. Scraping 2 channels...
+2026-01-18 11:08:05,627 - INFO - Scraping @tikvahpharma...
+2026-01-18 11:08:05,748 - INFO - Starting scrape of @tikvahpharma (limit=100)
+2026-01-18 11:10:53,364 - INFO - Finished scraping @tikvahpharma: 100 messages saved
+2026-01-18 11:10:56,376 - INFO - Scraping @tenamereja...
+2026-01-18 11:10:56,534 - INFO - Starting scrape of @tenamereja (limit=100)
+2026-01-18 11:13:32,897 - INFO - Finished scraping @tenamereja: 100 messages saved
+2026-01-18 11:13:35,911 - INFO - Scraping complete. Total messages: 200
+2026-01-18 11:13:35,911 - INFO -   @tikvahpharma: 100 messages
+2026-01-18 11:13:35,911 - INFO -   @tenamereja: 100 messages
